@@ -30,8 +30,6 @@ https://visitor-badge.vercel.app/page/{page_id}?color=blue
 
 # Deploy on your own Vercel instance
 
-Since the GitHub API only allows 5k requests per hour, it is possible that my `https://visitor-badge-node.vercel.app/u/wangningkai` could hit the rate limiter. If you host it on your own Vercel server, then you don't have to worry about anything. Click on the deploy button to get started!
-
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/wangningkai/visitor-badge-node)
 
 ### :sparkling_heart: Support the project
