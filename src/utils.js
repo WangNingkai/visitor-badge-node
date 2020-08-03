@@ -1,4 +1,4 @@
-const { makeBadge, ValidationError } = require('badge-maker')
+const { makeBadge } = require('badge-maker')
 /**
  * @param {string} message
  * @param {string} secondaryMessage
@@ -18,17 +18,17 @@ const renderError = (message, secondaryMessage = 'Opps!') => {
 const renderBadge = (name = 'visitors', string = '1', color = 'blue') => {
   const format = {
     label: name,
-    message: string,
+    message: String(string),
     color: color,
   }
-
+  let res
   try {
-    const svg = makeBadge(format)
-    return svg
+    res = makeBadge(format)
   } catch (e) {
     console.error(e) // ValidationError: Field `message` is required
     return renderError(e.message)
   }
+  return res
 }
 
 module.exports = {

@@ -1,3 +1,16 @@
 {
-    "name": "visitor-badge-node"
+    "name": "visitor-badge-node",
+    "routes": [{
+            "src": "/",
+            "dest": "/api/badge.js?page_id=visitor-badge-node"
+        },
+        {
+            "src": "/page/(?<page_id>[^/]*)",
+            "dest": "/api/badge.js?page_id=$page_id"
+        },
+        {
+            "src": "/p/(?<page_id>[^/]*)",
+            "dest": "/api/badge.js?page_id=$page_id"
+        }
+    ]
 }
