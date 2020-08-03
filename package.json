@@ -24,7 +24,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "badge-maker": "^3.2.0",
-    "countapi-js": "^1.0.1"
+    "countapi-js": "^1.0.1",
+    "md5": "^2.3.0"
   },
   "devDependencies": {
     "prettier": "^2.0.5"
