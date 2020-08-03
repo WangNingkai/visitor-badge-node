@@ -1,0 +1,32 @@
+{
+  "name": "visitor-badge-node",
+  "version": "1.0.0",
+  "description": "A badge generator service to count visitors of your markdown file.",
+  "main": "badge.js",
+  "author": {
+    "name": "@wangningkai and community",
+    "email": "i@ningkai.wang",
+    "url": "https://wangningkai.github.io"
+  },
+  "bugs": "https://github.com/wangningkai/visitor-badge-node/issues",
+  "homepage": "https://github.com/wangningkai/visitor-badge-node",
+  "keywords": [
+    "markdown",
+    "svg",
+    "visitor-couter",
+    "visitor tracking",
+    "visitor-badge-node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangningkai/visitor-badge-node"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "badge-maker": "^3.2.0",
+    "countapi-js": "^1.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
