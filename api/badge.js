@@ -1,5 +1,6 @@
 const { renderBadge } = require('../src/utils')
 const md5 = require('md5')
+const countapi = require('countapi-js')
 module.exports = async (req, res) => {
   const { page_id, color } = req.query
   if (typeof page_id === 'undefined') {
@@ -7,9 +8,7 @@ module.exports = async (req, res) => {
   } else {
     key = page_id
   }
-
-  const countapi = require('countapi-js')
-  countapi.visits(md5(key)).then((result) => {
+  countapi.hit('visitor-badge', md5(key)).then((result) => {
     res.setHeader('Content-Type', 'image/svg+xml')
     res.send(renderBadge('visitors', result.value, color))
   })
