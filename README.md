@@ -2,7 +2,6 @@
 
 > A badge generator service to count visitors of your markdown file.
 
-[![visitors](https://visitor-badge.vercel.app/p/visitor-badge-node?color=brightgreen)](https://github.com/WangNingkai/visitor-badge-node)
 ![GitHub top language](https://img.shields.io/github/languages/top/wangningkai/visitor-badge-node.svg?style=popout-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/wangningkai/visitor-badge-node.svg?style=popout-square)
 ![GitHub](https://img.shields.io/github/license/wangningkai/visitor-badge-node.svg?style=popout-square)
